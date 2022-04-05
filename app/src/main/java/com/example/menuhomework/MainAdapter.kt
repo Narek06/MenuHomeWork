@@ -1,5 +1,6 @@
 package com.example.menuhomework
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -34,6 +35,7 @@ class MainAdapter(
         val price = itemView.findViewById<TextView>(R.id.price_value)
         val ratingStar = itemView.findViewById<ImageView>(R.id.imageView)
 
+        @SuppressLint("SetTextI18n")
         fun bind(foodModel: FoodModel) {
             name.text = foodModel.naame
             rName.text = foodModel.rName
@@ -42,6 +44,8 @@ class MainAdapter(
             imgFood.setImageResource(foodModel.imageId)
 
             var a = false
+
+            @SuppressLint("SetTextI18n")
             fun plusRating() {
                 if (!a) {
                     foodModel.rating = rating.text.toString().toInt() + 1

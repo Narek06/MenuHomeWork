@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 class MainActivity2 : AppCompatActivity() {
     lateinit var adapter2: MainAdapter
 
+    @SuppressLint("SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)

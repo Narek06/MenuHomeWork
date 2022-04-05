@@ -22,7 +22,8 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toEndOf="@+id/img_food_avatar"
-            app:layout_constraintTop_toTopOf="@+id/img_food_avatar" />
+            app:layout_constraintTop_toTopOf="@+id/img_food_avatar"
+            tools:ignore="HardcodedText" />
 
         <TextView
             android:id="@+id/r_name"
@@ -33,7 +34,8 @@
             android:textColor="@color/black"
             android:textSize="24px"
             app:layout_constraintStart_toStartOf="@+id/tv_foodname"
-            app:layout_constraintTop_toBottomOf="@+id/tv_foodname" />
+            app:layout_constraintTop_toBottomOf="@+id/tv_foodname"
+            tools:ignore="HardcodedText,PxUsage" />
         <!-- android:textColor="#c9c9c9" -->
 
         <ImageView
@@ -46,7 +48,8 @@
             app:layout_constraintBottom_toBottomOf="@+id/rating"
             app:layout_constraintStart_toStartOf="@+id/r_name"
             app:layout_constraintTop_toTopOf="@+id/rating"
-            app:layout_constraintVertical_bias="0.19999999" />
+            app:layout_constraintVertical_bias="0.19999999"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/rating"
@@ -59,7 +62,8 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/imageView"
-            app:layout_constraintTop_toBottomOf="@+id/r_name" />
+            app:layout_constraintTop_toBottomOf="@+id/r_name"
+            tools:ignore="HardcodedText" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/img_food_avatar"
@@ -79,7 +83,8 @@
                 android:layout_height="70dp"
                 android:layout_marginBottom="16dp"
                 android:background="@drawable/food_logo"
-                android:foreground="?attr/selectableItemBackgroundBorderless" />
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                tools:ignore="ContentDescription" />
         </androidx.cardview.widget.CardView>
 
 
@@ -91,7 +96,8 @@
             android:background="@drawable/ic_baseline_add_shopping_cart_24"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
 
         <TextView
             android:id="@+id/price_value"
@@ -103,7 +109,8 @@
             app:layout_constraintEnd_toStartOf="@+id/add_favorite"
             app:layout_constraintStart_toStartOf="@+id/tv_foodname"
             app:layout_constraintTop_toBottomOf="@+id/tv_foodname"
-            app:layout_constraintVertical_bias="0.85" />
+            app:layout_constraintVertical_bias="0.85"
+            tools:ignore="HardcodedText" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
